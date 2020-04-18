@@ -93,11 +93,21 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: mundana-theme-jekyll
+# theme: mundana-theme-jekyll
+theme: polarbear
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: https://github.com/ZhangnLei/zhangnlei.github.io
-  branch: master
+  type: ''
+
+# deploy:
+#   type: git
+#   repository: https://github.com/ZhangnLei/zhangnlei.github.io
+#   branch: master
+
+archive_generator:
+    per_page: 0
+    yearly: false
+    monthly: false
+    daily: false
