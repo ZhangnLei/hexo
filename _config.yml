@@ -104,7 +104,7 @@ theme: vexo
 
 deploy:
   type: git
-  repository: https://github.com/ZhangnLei/zhangnlei.github.io
+  repo: https://github.com/ZhangnLei/zhangnlei.github.io
   branch: master
 
 archive_generator:
