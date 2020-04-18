@@ -14,6 +14,12 @@ tags: hexo
 hexo clean; hexo g; hexo s;
 ```
 
+Github部署服务
+
+```shell
+hexo g -d
+```
+
 以后会在此记录一些读书笔记、编程分享之类的文章。
 
 
