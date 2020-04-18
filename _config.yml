@@ -98,4 +98,6 @@ theme: vexo
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/ZhangnLei/zhangnlei.github.io
+  branch: master
