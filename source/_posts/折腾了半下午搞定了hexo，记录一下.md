@@ -1,7 +1,8 @@
 ---
 title: 折腾了半下午搞定了hexo，记录一下
 date: 2020-04-18 17:29:35
-tags: hexo
+tags: 
+- hexo
 ---
 
 

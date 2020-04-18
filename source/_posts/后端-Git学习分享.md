@@ -1,7 +1,10 @@
 ---
 title: 后端 - Git学习分享
 date: 2020-04-18 19:22:42
-tags: Git, rebase, cherry-pick
+tags: 
+- Git
+- rebase
+- cherry-pick
 ---
 
 # 后端 - Git学习分享
@@ -32,8 +35,6 @@ git rebase master # 改变代码提交的顺序
 git cherry-pick C2 C3 # 将C2 C3次提交添加到当前分支 git cherry-pick 'commit id'  # 复制一个特定的提交到当前的分支
 git rebase -i HEAD~4 # 交互式rebase最近的4次提交
 ```
-
-
 
 
 
@@ -105,3 +106,18 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 来看看`git lg`的效果：
 
 <img src="https://tva1.sinaimg.cn/large/00831rSTgy1gd8j6l772pj317w0u015d.jpg" alt="image-20200327154509668" style="zoom: 50%;" />
+
+
+
+
+
+## 其他操作：
+
+连接远程仓库
+**git remote add origin 仓库地址**
+
+查看远程连接
+**git remote -v**
+
+git取消与远程仓库的连接
+**git remote remove origin**
