@@ -94,7 +94,8 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: mundana-theme-jekyll
-theme: polarbear
+# theme: polarbear
+theme: vexo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

@@ -10,7 +10,7 @@
   
   <title>
     
-      We all wait for summer | 张念磊的博客
+      Vue - 滚动条滚动到最下方时更新 | 张念磊的博客
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -131,7 +131,7 @@
 </header>
 
     <div id="article-banner">
-  <h2>We all wait for summer</h2>
+  <h2>Vue - 滚动条滚动到最下方时更新</h2>
   <p class="post-date">2020-04-18</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
@@ -140,9 +140,25 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h1 id="We-all-wait-for-summer"><a href="#We-all-wait-for-summer" class="headerlink" title="We all wait for summer"></a>We all wait for summer</h1><p>折腾了半下午搞定了hexo，记录一下。</p>
+    <section class="markdown-content"><p><code>代码展示</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">watchScroll() &#123;</span><br><span class="line">  <span class="keyword">this</span>.$nextTick(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> el = <span class="keyword">this</span>.$refs[<span class="string">"discussInfoBox"</span>];</span><br><span class="line">    <span class="keyword">const</span> offsetHeight = el.offsetHeight;</span><br><span class="line">    el.onscroll = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">const</span> scrollTop = el.scrollTop;</span><br><span class="line">      <span class="keyword">const</span> scrollHeight = el.scrollHeight;</span><br><span class="line">      <span class="keyword">if</span> (offsetHeight + scrollTop - scrollHeight &gt;= <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="comment">// 需要执行的代码</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"get info "</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p><code>使用步骤</code></p>
+<ol>
+<li>第三行中的<code>discussInfoBox</code>为要监听的div的ID</li>
+<li>在第十行编写当滚动条滚动到最下方时需要调用的函数</li>
+<li>在需要的地方调用该函数。例如created方法或其他监听事件中</li>
+</ol>
 </section>
     <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#Vue, 滚动条" >
+    <span class="tag-code">Vue, 滚动条</span>
+  </a>
+
+      </div>
     
     <!-- Tags END -->
     <!-- NAV START -->
@@ -150,13 +166,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-    
-      <a class="nav-right" href="/2020/04/18/%E6%8A%98%E8%85%BE%E4%BA%86%E5%8D%8A%E4%B8%8B%E5%8D%88%E6%90%9E%E5%AE%9A%E4%BA%86hexo%EF%BC%8C%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B/">
+      <a class="nav-left" href="/2020/04/18/Vue-%E7%88%B6%E7%BB%84%E4%BB%B6%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E5%AD%90%E7%BB%84%E4%BB%B6%E7%9A%84%E5%8F%82%E6%95%B0/">
+        <span class="nav-arrow">← </span>
         
-          折腾了半下午搞定了hexo，记录一下
+          Vue - 父组件如何更新子组件的参数
         
-        <span class="nav-arrow"> →</span>
       </a>
+    
     
   </div>
 
@@ -185,7 +201,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#We-all-wait-for-summer"><span class="toc-nav-text">We all wait for summer</span></a></li></ol>
+      <ol class="nav">none</ol>
     
   </div>
 </aside>
@@ -195,7 +211,7 @@
 
 <script>
   (function () {
-    var url = 'http://yoursite.com/2020/04/18/We-all-wait-for-summer/';
+    var url = 'http://yoursite.com/2020/04/18/Vue-滚动条滚动到最下方时更新/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
@@ -257,7 +273,7 @@
     var gitmentConfig = "zhangnlei";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "We all wait for summer",
+        id: "Vue - 滚动条滚动到最下方时更新",
         owner: "zhangnlei",
         repo: "zhangnlei.github.io",
         oauth: {
