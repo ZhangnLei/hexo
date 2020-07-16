@@ -56,9 +56,7 @@ tags:
 
 在我的思路上做了优化，只维护一个hashMap，遍历短的数组，生成hashMap，value增加；遍历第二个数组，取map中找是否存在元素，如存在则value-1，把key添加到结果中。很精妙！
 
-
-
-可选优化：value=0时把key删掉，每次getKey前判断map是否有key
+(可选优化：value=0时把key删掉，每次getKey前判断map是否有key)
 
 
 
